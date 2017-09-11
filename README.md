@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Natcreo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
@@ -26,3 +27,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# natcreo
+Nature Creations is an artful, savvy, business design store.
+>>>>>>> b9c250bb56513a4705f6d4aa5ad096d4a4c26610
