@@ -1,9 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { ServerModule } from '@angular/platform-server';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
+
 
 import { HeaderModule } from './shared/layouts/header.module';
 import { WelcomeModule } from './welcome/welcome.module';
@@ -20,10 +23,16 @@ import { HeaderComponent } from './shared/layouts/header.component';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'natcreo'}),
+    FormsModule,
+    HttpModule,
     ServerModule,
     ServiceWorkerModule,
-    MaterialModule,
     BrowserAnimationsModule,
+    MdButtonModule,
+    MdMenuModule,
+    MdCardModule,
+    MdToolbarModule,
+    MdIconModule,
     // Application Modules
     WelcomeModule,
     HeaderModule
