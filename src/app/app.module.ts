@@ -5,14 +5,18 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { WelcomeModule } from './welcome/welcome.module';
 import { HeaderModule } from './shared/layouts/header.module';
+import { WelcomeModule } from './welcome/welcome.module';
 
 import { AppComponent } from './app.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { HeaderComponent } from './shared/layouts/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'natcreo'}),
