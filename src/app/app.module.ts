@@ -6,6 +6,7 @@ import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { WelcomeModule } from './welcome/welcome.module';
+import { HeaderModule } from './shared/layouts/header.module';
 
 import { AppComponent } from './app.component';
 
@@ -20,7 +21,8 @@ import { AppComponent } from './app.component';
     MaterialModule,
     BrowserAnimationsModule,
     // Application Modules
-    WelcomeModule
+    WelcomeModule,
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
