@@ -7,4 +7,4 @@ ng build --prod
 
 # Serve
 cd dist
-live-server
+http-server
