@@ -7,19 +7,20 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
 
+// App Component
+import { AppComponent } from './app.component';
 
-import { HeaderModule } from './shared/layouts/header.module';
+// Application Modules
 import { WelcomeModule } from './welcome/welcome.module';
 
-import { AppComponent } from './app.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { HeaderComponent } from './shared/layouts/header.component';
+// Application Components
+import { LayoutsComponent } from './layouts/layouts.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    WelcomeComponent
+    LayoutsComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'natcreo'}),
@@ -34,8 +35,7 @@ import { HeaderComponent } from './shared/layouts/header.component';
     MdToolbarModule,
     MdIconModule,
     // Application Modules
-    WelcomeModule,
-    HeaderModule
+    WelcomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
