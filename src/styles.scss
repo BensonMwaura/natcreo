@@ -4,14 +4,43 @@
 
 body {
   margin: 0;
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
-.company-name {
-  font-family: 'Aclonica', sans-serif;
-}
+
 md-toolbar-row {
   justify-content: space-between;
 }
 md-card {
   font-family: 'Open Sans', sans-serif;
+}
+
+.company-name {
+  font-family: 'Aclonica', sans-serif;
+}
+.main-grid {
+  width: 85%;
+  margin: 50px auto;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  /* grid-auto-rows: 100px; */
+  grid-auto-rows: minmax(100px, auto);
+
+  & > div {
+    padding: 1em;
+    background: #eee;
+    &:nth-child(odd) {
+      background: #ddd;
+    }
+  }
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  & > div {
+    border: #EE4141 1px solid;
+    padding: 15px;
+  }
 }
