@@ -1,12 +1,17 @@
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+// @import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+
 @import './assets/artful-theme.scss';
 
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
-  background: lightgray;
 }
-
+.company-name {
+  font-family: 'Aclonica', sans-serif;
+}
 md-toolbar-row {
   justify-content: space-between;
+}
+md-card {
+  font-family: 'Open Sans', sans-serif;
 }

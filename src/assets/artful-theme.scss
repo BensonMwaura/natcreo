@@ -1,83 +1,82 @@
-// Import all the tools needed to customize the theme and extract parts of it
-@import '../../node_modules/@angular/material/theming';
-
-@include mat-core();
-
 // Nature Creations Artful Theme | Stylescape Color Pallete
 // Codepen Ref: https://codepen.io/buzzkey/pen/aLmpzN
 // Colors
-$main-primary: (
-  '50': 'fefdf6',
-  '100': 'ffffe6',
-  '200': 'f9f9da',
-  '300': 'f7f6cb',
-  '400': 'f5f4bf',
-  '500': 'f3f2b4',
-  '600': 'f1f0ad',
-  '700': 'efeea4',
-  '800': 'eae88c',
-  '900': 'c0bf84',
-  'A100': 'ffffe6',
-  'A200': 'f9f9da',
-  'A400': 'f3f2b4',
-  'A700': 'c0bf84',
+// Import all the tools needed to customize the theme and extract parts of it
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+
+$md-natcreoprimary: (
+  50 : #fefef6,
+  100 : #fdfde7,
+  200 : #fcfcd8,
+  300 : #fbfac8,
+  400 : #faf9bc,
+  500 : #f9f8b0,
+  600 : #f8f7a9,
+  700 : #f7f6a0,
+  800 : #f6f597,
+  900 : #f5f387,
+  A100 : #ffffff,
+  A200 : #fbfac8,
+  A400 : #f8f7a9,
+  A700 : #f5f387,
   contrast: (
-    50: $black-87-opacity,
-    100: $black-87-opacity,
-    200: $black-87-opacity,
-    300: $black-87-opacity,
-    400: $black-87-opacity,
-    500: black,
-    600: black,
-    700: black,
-    800: $black-87-opacity,
-    900: $black-87-opacity,
-    A100: $black-87-opacity,
-    A200: black,
-    A400: black,
-    A700: black,
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #000000,
+      500 : #000000,
+      600 : #000000,
+      700 : #000000,
+      800 : #000000,
+      900 : #000000,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
   )
 );
 
-$main-secondary: (
-  '50': 'f7e5e5',
-  '100': 'ecbebe',
-  '200': 'e09393',
-  '300': 'd36868',
-  '400': 'c94747',
-  '500': 'c02727',
-  '600': 'ba2323',
-  '700': 'b21d1d',
-  '800': 'aa1717',
-  '900': '880000',
-  'A100': 'ffcbcb',
-  'A200': 'f95d50',
-  'A400': 'c02727',
-  'A700': '880000',
+$md-natcreoaccent: (
+  50 : #f7e5e5,
+  100 : #ecbebe,
+  200 : #e09393,
+  300 : #d36868,
+  400 : #c94747,
+  500 : #c02727,
+  600 : #ba2323,
+  700 : #b21d1d,
+  800 : #aa1717,
+  900 : #9c0e0e,
+  A100 : #ffcbcb,
+  A200 : #ff9898,
+  A400 : #c02727,
+  A700 : #b21d1d,
   contrast: (
-    50: $black-87-opacity,
-    100: $black-87-opacity,
-    200: $black-87-opacity,
-    300: $black-87-opacity,
-    400: $white-87-opacity,
-    500: white,
-    600: white,
-    700: white,
-    800: $white-87-opacity,
-    900: $white-87-opacity,
-    A100: $black-87-opacity,
-    A200: $black-87-opacity,
-    A400: white,
-    A700: white,
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #ffffff,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
   )
 );
-
-$main-alert-warn: #E65100;
 
 // Artful Theme Material Color Pallete
-$artful-theme-primary: mat-palette($main-primary, A400, A200, A700);
-$artful-theme-accent: mat-palette($main-secondary, A400, A200, A700);
-$artful-theme-warn: mat-palette($main-alert-warn);
+$artful-theme-primary: mat-palette($md-natcreoprimary, 600, 200, 900);
+$artful-theme-accent: mat-palette($md-natcreoaccent, 500, 200, 900);
+$artful-theme-warn: mat-palette($mat-deep-orange, 900);
 
 // Create Artful Theme
 $artful-theme: mat-light-theme(
@@ -86,4 +85,8 @@ $artful-theme: mat-light-theme(
   $artful-theme-warn
 );
 
-@include angular-material-theme($artful-theme);
+// use our theme with angular-material-theme mixin
+.artful-theme {
+  @include angular-material-theme($artful-theme);
+}
+
