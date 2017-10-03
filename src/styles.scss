@@ -19,14 +19,18 @@ md-card {
 }
 .main-grid {
   width: 85%;
+  max-width: 1200px;
   margin: 50px auto;
   display: grid;
+
   /* grid-template-columns: 1fr 1fr 1fr; */
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.7em;
+
   /* grid-auto-rows: 100px; */
   grid-auto-rows: minmax(100px, auto);
 
+  // div or card settings
   & > div {
     padding: 1em;
     background: #eee;
@@ -34,15 +38,39 @@ md-card {
       background: #ddd;
     }
   }
+
+  // @media-query
+  @media (min-width: 50em) {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
 }
 .brand-desc {
   grid-column: span 3;
+  // @media-query
+  @media (max-width: 48em) {
+    grid-column: span 2;
+  }
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(45px, auto);
+  align-self: auto;
+  & > div {
+    border-bottom: #C43902 1px dotted;
+    padding: 3px;
+    font-weight: bold;
+  }
+  @media (min-width: 64em) {
+    grid-column: span 2;
+  }
 }
 .product-grid {
-  grid-column: span 2;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 5px;
+  grid-column: span 2;
   & > div {
     border: #EE4141 1px solid;
     padding: 15px;
