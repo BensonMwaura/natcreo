@@ -1,0 +1,92 @@
+// Nature Creations Artful Theme | Stylescape Color Pallete
+// Codepen Ref: https://codepen.io/buzzkey/pen/aLmpzN
+// Colors
+// Import all the tools needed to customize the theme and extract parts of it
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+
+$md-natcreoprimary: (
+  50 : #fefef6,
+  100 : #fdfde7,
+  200 : #fcfcd8,
+  300 : #fbfac8,
+  400 : #faf9bc,
+  500 : #f9f8b0,
+  600 : #f8f7a9,
+  700 : #f7f6a0,
+  800 : #f6f597,
+  900 : #f5f387,
+  A100 : #ffffff,
+  A200 : #fbfac8,
+  A400 : #f8f7a9,
+  A700 : #f5f387,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #000000,
+      500 : #000000,
+      600 : #000000,
+      700 : #000000,
+      800 : #000000,
+      900 : #000000,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
+  )
+);
+
+$md-natcreoaccent: (
+  50 : #f7e5e5,
+  100 : #ecbebe,
+  200 : #e09393,
+  300 : #d36868,
+  400 : #c94747,
+  500 : #c02727,
+  600 : #ba2323,
+  700 : #b21d1d,
+  800 : #aa1717,
+  900 : #9c0e0e,
+  A100 : #ffcbcb,
+  A200 : #ff9898,
+  A400 : #c02727,
+  A700 : #b21d1d,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #ffffff,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #000000,
+  )
+);
+
+// Artful Theme Material Color Pallete
+$artful-theme-primary: mat-palette($md-natcreoprimary, 600, 200, 900);
+$artful-theme-accent: mat-palette($md-natcreoaccent, 500, 200, 900);
+$artful-theme-warn: mat-palette($mat-deep-orange, 900);
+
+// Create Artful Theme
+$artful-theme: mat-light-theme(
+  $artful-theme-primary,
+  $artful-theme-accent,
+  $artful-theme-warn
+);
+
+// use our theme with angular-material-theme mixin
+.artful-theme {
+  @include angular-material-theme($artful-theme);
+}
+

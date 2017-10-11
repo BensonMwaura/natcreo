@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+// @import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+
+@import './assets/artful-theme.scss';
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+md-toolbar-row {
+  justify-content: space-between;
+}
+md-card {
+  font-family: 'Open Sans', sans-serif;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.app-bar {
+  width: 100%;
+  background: #c0bf84;
+  height: 25px;
+}
+.company-name {
+  font-family: 'Aclonica', sans-serif;
+}
+.header-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #3F51B5;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+swiper {
+  width: 50%;
+  height: 18.75em;
+}
+.main-grid {
+  width: 85%;
+  max-width: 1200px;
+  margin: 50px auto;
+  display: grid;
+
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.7em;
+
+  /* grid-auto-rows: 100px; */
+  grid-auto-rows: minmax(100px, auto);
+
+  // div or card settings
+  & > div {
+    padding: 1em;
+    background: #eee;
+    &:nth-child(odd) {
+      background: #ddd;
+    }
+    &.brand-desc {
+      margin-top: -20vh;
+    }
+  }
+
+  // @media-query
+  @media (min-width: 50em) {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+}
+.brand-desc {
+  grid-column: span 3;
+  // @media-query
+  @media (max-width: 48em) {
+    grid-column: span 2;
+  }
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(45px, auto);
+  align-self: auto;
+  & > div {
+    border-bottom: #C43902 1px dotted;
+    padding: 3px;
+    font-weight: bold;
+  }
+  @media (min-width: 48em) {
+    grid-column: span 2;
+  }
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  grid-column: span 2;
+  & > div {
+    border: #EE4141 1px solid;
+    padding: 15px;
+  }
+}
