@@ -1,13 +1,25 @@
+<section class="app-bar" color="primary dark"></section>
 <md-toolbar color="primary">
-  <span>Nature Creations &trade;</span>
+  <span class="company-name">Nature Creations &trade;</span>
   <span class="example-spacer"></span>
-  <button md-button [mdMenuTriggerFor]="appMenu">Menu <md-icon>menu</md-icon></button>
+  <button md-button [mdMenuTriggerFor]="appMenu"><md-icon>menu</md-icon> Menu</button>
 </md-toolbar>
 
 <md-menu x-position="after" #appMenu="mdMenu">
   <button md-menu-item> Settings </button>
   <button md-menu-item> Help </button>
 </md-menu>
+
+<div class="header-ribbon">
+  <swiper [config]="config" [(index)]="index">
+    <div>
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+  </swiper>
+</div>
+
 <section class="main-grid">
   <div class="brand-desc">
     Cillum duis anim irure non reprehenderit nulla incididunt.
