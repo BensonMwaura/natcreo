@@ -1,25 +1,25 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LayoutsComponent } from './layouts.component';
+import { TopNavComponent } from './top-nav.component';
 
-describe('LayoutsComponent', () => {
-  let component: LayoutsComponent;
-  let fixture: ComponentFixture<LayoutsComponent>;
+describe('TopNavComponent', () => {
+  let component: TopNavComponent;
+  let fixture: ComponentFixture<TopNavComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LayoutsComponent ]
+      declarations: [ TopNavComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LayoutsComponent);
+    fixture = TestBed.createComponent(TopNavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should be created', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });

@@ -18,19 +18,17 @@ import { AppComponent } from './app.component';
 
 // Application Modules
 import { CoreModule } from './core/core.module';
-import { WelcomeModule } from './welcome/welcome.module';
+import { AboutModule } from './about/about.module';
+import { LayoutsModule } from './layouts/layouts.module';
+import { SharedModule } from './shared/shared.module';
 
 // Application Components
-import { LayoutsComponent } from './layouts/layouts.component';
-import { NavigationComponent } from './layouts/navigation/navigation.component';
 
 export const firebaseConfig = environment.firebaseConfig;
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LayoutsComponent,
-    NavigationComponent
+    AppComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'natcreo'}),
@@ -51,7 +49,9 @@ export const firebaseConfig = environment.firebaseConfig;
     FlexLayoutModule,
     // Application Modules
     CoreModule,
-    WelcomeModule
+    AboutModule,
+    LayoutsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
