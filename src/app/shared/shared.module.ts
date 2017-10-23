@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
@@ -12,6 +13,7 @@ import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModu
     MdCardModule,
     MdToolbarModule,
     MdIconModule,
+    FlexLayoutModule,
   ],
   declarations: [],
   exports: [
@@ -21,6 +23,7 @@ import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModu
     MdCardModule,
     MdToolbarModule,
     MdIconModule,
+    FlexLayoutModule,
   ]
 })
 export class SharedModule { }

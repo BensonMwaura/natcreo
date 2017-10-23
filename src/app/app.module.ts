@@ -7,9 +7,6 @@ import { ServerModule } from '@angular/platform-server';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { environment } from './../environments/environment';
 
 // App Component
@@ -38,13 +35,6 @@ export const firebaseConfig = environment.firebaseConfig;
     ServiceWorkerModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
-    BrowserAnimationsModule,
-    MdButtonModule,
-    MdMenuModule,
-    MdCardModule,
-    MdToolbarModule,
-    MdIconModule,
-    FlexLayoutModule,
     // Application Modules
     CoreModule,
     AboutModule,
