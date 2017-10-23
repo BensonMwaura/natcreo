@@ -5,10 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ServerModule } from '@angular/platform-server';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { AngularFireModule } from 'angularfire2/public_api';
+import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdlModule } from '@angular-mdl/core';
 import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { environment } from './../environments/environment';
@@ -40,7 +39,6 @@ export const firebaseConfig = environment.firebaseConfig;
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
     BrowserAnimationsModule,
-    MdlModule,
     MdButtonModule,
     MdMenuModule,
     MdCardModule,
