@@ -5,13 +5,13 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  max-width: 1200px;
+  max-width: 1440px;
 }
 
-md-toolbar-row {
+mat-toolbar-row {
   justify-content: space-between;
 }
-md-card {
+mat-card {
   font-family: 'Open Sans', sans-serif;
 }
 .nav-spacer {

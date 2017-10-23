@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
+import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdTabsModule, MdIconModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
@@ -12,6 +12,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MdMenuModule,
     MdCardModule,
     MdToolbarModule,
+    MdTabsModule,
     MdIconModule,
     FlexLayoutModule,
   ],
@@ -22,6 +23,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MdMenuModule,
     MdCardModule,
     MdToolbarModule,
+    MdTabsModule,
     MdIconModule,
     FlexLayoutModule,
   ]
