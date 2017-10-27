@@ -1,13 +1,17 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { AboutRoutingModule } from './about-routing.module';
 import { AboutComponent } from './about.component';
-import { HeroComponent } from './hero/hero.component';
-import { SnippetComponent } from './snippet/snippet.component';
+import { CarouselBasicComponent } from './carousel-basic/carousel-basic.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    NgbModule,
+    AboutRoutingModule
   ],
-  declarations: [AboutComponent, HeroComponent, SnippetComponent]
+  declarations: [AboutComponent, CarouselBasicComponent]
 })
 export class AboutModule { }
