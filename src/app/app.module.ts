@@ -6,8 +6,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 
 // Application Modules
 import { CoreModule } from './core/core.module';
-import { LayoutsModule } from './layouts/layouts.module';
 import { SharedModule } from './shared/shared.module';
+import { LayoutsModule } from './layouts/layouts.module';
 import { AppRoutingModule } from './app-routing.module';
 
 // Application Components
@@ -26,8 +26,8 @@ import { AppComponent } from './app.component';
     NgbModule.forRoot(),
     // Application Modules
     CoreModule,
-    LayoutsModule,
     SharedModule,
+    LayoutsModule,
     AppRoutingModule
   ],
   bootstrap: [AppComponent]

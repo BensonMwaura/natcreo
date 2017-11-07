@@ -6,8 +6,9 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { SharedModule } from '../shared/shared.module';
-import { ProductsModule } from './../products/products.module';
-/** import { reducers } from './reducers'; */
+import { AboutModule } from './../about/about.module';
+import { NotFoundModule } from './../not-found/not-found.module';
+
 import { environment } from '../../environments/environment';
 
 
@@ -18,7 +19,8 @@ export const firebaseConfig = environment.firebaseConfig;
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
     SharedModule,
-    ProductsModule
+    AboutModule,
+    NotFoundModule
   ],
   declarations: []
 })
