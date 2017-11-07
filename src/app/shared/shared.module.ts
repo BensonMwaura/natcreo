@@ -4,39 +4,38 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdTabsModule, MdIconModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatTabsModule, MatIconModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
-
 @NgModule({
   imports: [
     CommonModule,
-    NgbModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
+    NgbModule,
     BrowserAnimationsModule,
-    MdButtonModule,
-    MdMenuModule,
-    MdCardModule,
-    MdToolbarModule,
-    MdTabsModule,
-    MdIconModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatTabsModule,
+    MatIconModule,
     FlexLayoutModule
   ],
   declarations: [],
   exports: [
-    NgbModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
+    NgbModule,
     BrowserAnimationsModule,
-    MdButtonModule,
-    MdMenuModule,
-    MdCardModule,
-    MdToolbarModule,
-    MdTabsModule,
-    MdIconModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatTabsModule,
+    MatIconModule,
     FlexLayoutModule
   ]
 })

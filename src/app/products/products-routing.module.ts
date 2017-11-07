@@ -1,9 +1,10 @@
-import { ProductsComponent } from './products.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ProductsComponent } from './products.component';
 
 const PRODUCTROUTES: Routes = [
-  { path: '', component: ProductsComponent }
+  { path: '', redirectTo: '/products', pathMatch: 'full' },
+  { path: 'products', component: ProductsComponent }
 ];
 
 @NgModule({

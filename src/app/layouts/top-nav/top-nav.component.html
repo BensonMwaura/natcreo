@@ -23,18 +23,16 @@
 </md-menu>
 <!-- menutab -->
 <md-tab-group color="accent" md-stretch-tabs>
-  <md-tab label="About"></md-tab>
-  <md-tab label="Products"></md-tab>
-  <md-tab label="Services"></md-tab>
-  <md-tab label="Dashboard" disabled></md-tab>
-  <md-tab label="Settings"></md-tab>
+  <md-tab label="About" routerLink="about" routerLinkActive="active"></md-tab>
+  <md-tab label="Products" routerLink="products" routerLinkActive="active"></md-tab>
+  <md-tab label="Services" routerLink="services" routerLinkActive="active"></md-tab>
+  <md-tab label="Dashboard" routerLink="dashboard/:user" routerLinkActive="active" disabled></md-tab>
+  <md-tab label="Settings" routerLink="settings" routerLinkActive="active" disabled></md-tab>
 </md-tab-group>
-<!-- <nav mat-tab-nav-bar>
-  <a mat-tab-link
-     *ngFor="let link of navLinks"
-     [routerLink]="link.path"
-     routerLinkActive #rla="routerLinkActive"
-     [active]="rla.isActive">
-    {{//link.//label}}
-  </a>
+<!-- <nav md-tab-nav-bar>
+  <a md-tab-link label="About" routerLink="about" routerLinkActive="active"></a>
+  <a md-tab-link label="Products" routerLink="products" routerLinkActive="active"></a>
+  <a md-tab-link label="Services" routerLink="services" routerLinkActive="active"></a>
+  <a md-tab-link label="Dashboard" routerLink="dashboard/:user" routerLinkActive="active" disabled></a>
+  <a md-tab-link label="Settings" routerLink="settings" routerLinkActive="active"></a>
 </nav> -->

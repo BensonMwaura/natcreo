@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './about.component';
 
 const ABOUTROUTES: Routes = [
-  { path: '', component: AboutComponent }
+  { path: '', redirectTo: '/about', pathMatch: 'full' },
+  { path: 'about', component: AboutComponent }
 ];
 
 @NgModule({

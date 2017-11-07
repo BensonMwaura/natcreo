@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AboutModule } from './about/about.module';
+
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/about', pathMatch: 'full' },
   { path: 'about', loadChildren: './about/about.module#AboutModule' },
-  { path: 'products', loadChildren: './products/products.module#ProductsModule'}
+  { path: '**', loadChildren: './page-not-found/page-not-found.module#PageNotFoundModule' }
 ];
 
 @NgModule({

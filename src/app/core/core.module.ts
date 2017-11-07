@@ -6,7 +6,10 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { SharedModule } from '../shared/shared.module';
+import { ProductsModule } from './../products/products.module';
+/** import { reducers } from './reducers'; */
 import { environment } from '../../environments/environment';
+
 
 export const firebaseConfig = environment.firebaseConfig;
 @NgModule({
@@ -14,7 +17,8 @@ export const firebaseConfig = environment.firebaseConfig;
     CommonModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
-    SharedModule
+    SharedModule,
+    ProductsModule
   ],
   declarations: []
 })
