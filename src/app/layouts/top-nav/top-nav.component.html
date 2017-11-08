@@ -9,30 +9,34 @@
 <!-- menu -->
 <md-menu #menu="mdMenu" color="accent">
   <button md-menu-item>
+    <md-icon>info</md-icon>
+    <span>About</span>
+  </button>
+  <button md-menu-item>
+    <md-icon>store</md-icon>
+    <span>Products</span>
+  </button>
+  <button md-menu-item>
+    <md-icon>work</md-icon>
+    <span>Features</span>
+  </button>
+  <button md-menu-item disabled>
+    <md-icon>dashboard</md-icon>
+    <span>Dashboard</span>
+  </button>
+  <button md-menu-item disabled>
+    <md-icon>settings</md-icon>
+    <span>Settings</span>
+  </button>
+  <button md-menu-item>
     <md-icon>fingerprint</md-icon>
     <span>Login</span>
   </button>
-  <button md-menu-item disabled>
-    <md-icon>announcement</md-icon>
-    <span>News</span>
-  </button>
-  <button md-menu-item>
-    <md-icon>notifications_off</md-icon>
-    <span>Disable alerts</span>
-  </button>
 </md-menu>
 <!-- menutab -->
+
 <md-tab-group color="accent" md-stretch-tabs>
-  <md-tab label="About" routerLink="about" routerLinkActive="active"></md-tab>
-  <md-tab label="Products" routerLink="products" routerLinkActive="active"></md-tab>
-  <md-tab label="Services" routerLink="services" routerLinkActive="active"></md-tab>
-  <md-tab label="Dashboard" routerLink="dashboard/:user" routerLinkActive="active" disabled></md-tab>
-  <md-tab label="Settings" routerLink="settings" routerLinkActive="active" disabled></md-tab>
+  <md-tab label="Overview"></md-tab>
+  <md-tab label="Products"></md-tab>
+  <md-tab label="Services"></md-tab>
 </md-tab-group>
-<!-- <nav md-tab-nav-bar>
-  <a md-tab-link label="About" routerLink="about" routerLinkActive="active"></a>
-  <a md-tab-link label="Products" routerLink="products" routerLinkActive="active"></a>
-  <a md-tab-link label="Services" routerLink="services" routerLinkActive="active"></a>
-  <a md-tab-link label="Dashboard" routerLink="dashboard/:user" routerLinkActive="active" disabled></a>
-  <a md-tab-link label="Settings" routerLink="settings" routerLinkActive="active"></a>
-</nav> -->

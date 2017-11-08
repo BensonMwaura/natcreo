@@ -10,6 +10,7 @@ import { AboutModule } from './../about/about.module';
 import { NotFoundModule } from './../not-found/not-found.module';
 
 import { environment } from '../../environments/environment';
+import { ShowcaseComponent } from './components/showcase/showcase.component';
 
 
 export const firebaseConfig = environment.firebaseConfig;
@@ -22,6 +23,6 @@ export const firebaseConfig = environment.firebaseConfig;
     AboutModule,
     NotFoundModule
   ],
-  declarations: []
+  declarations: [ShowcaseComponent]
 })
 export class CoreModule { }
