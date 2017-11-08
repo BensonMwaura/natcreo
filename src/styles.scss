@@ -21,6 +21,14 @@ mat-card {
 }
 .company-name {
   font-family: 'Aclonica', sans-serif;
+  @media (max-width: 48em) {
+    font-size: 0.75em;
+  }
+}
+.menu-tag {
+  @media (max-width: 26.625em) {
+    display: none;
+  }
 }
 .hero {
   width: 100%;

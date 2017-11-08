@@ -3,8 +3,9 @@
   <span class="company-name">Nature Creations</span>
   <span class="nav-spacer"></span>
   <button md-icon-button [mdMenuTriggerFor]="menu">
-    <md-icon>more_vert</md-icon>
+    <md-icon>menu</md-icon>
   </button>
+  <span class="menu-tag">Menu</span>
 </md-toolbar>
 <!-- menu -->
 <md-menu #menu="mdMenu" color="accent">
@@ -34,9 +35,3 @@
   </button>
 </md-menu>
 <!-- menutab -->
-
-<md-tab-group color="accent" md-stretch-tabs>
-  <md-tab label="Overview"></md-tab>
-  <md-tab label="Products"></md-tab>
-  <md-tab label="Services"></md-tab>
-</md-tab-group>

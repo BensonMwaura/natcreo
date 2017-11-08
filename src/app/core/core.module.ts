@@ -7,10 +7,10 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { SharedModule } from '../shared/shared.module';
 import { AboutModule } from './../about/about.module';
+import { FeaturesModule } from './../features/features.module';
 import { NotFoundModule } from './../not-found/not-found.module';
 
 import { environment } from '../../environments/environment';
-import { ShowcaseComponent } from './components/showcase/showcase.component';
 
 
 export const firebaseConfig = environment.firebaseConfig;
@@ -21,8 +21,9 @@ export const firebaseConfig = environment.firebaseConfig;
     AngularFirestoreModule,
     SharedModule,
     AboutModule,
+    FeaturesModule,
     NotFoundModule
   ],
-  declarations: [ShowcaseComponent]
+  declarations: []
 })
 export class CoreModule { }
