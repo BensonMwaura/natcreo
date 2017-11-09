@@ -9,8 +9,10 @@ import { SharedModule } from '../shared/shared.module';
 import { AboutModule } from './../about/about.module';
 import { FeaturesModule } from './../features/features.module';
 import { NotFoundModule } from './../not-found/not-found.module';
+import { Routes, Router, RouterModule } from '@angular/router';
 
 import { environment } from '../../environments/environment';
+import { MainNavComponent } from './components/main-nav/main-nav.component';
 
 
 export const firebaseConfig = environment.firebaseConfig;
@@ -24,6 +26,7 @@ export const firebaseConfig = environment.firebaseConfig;
     FeaturesModule,
     NotFoundModule
   ],
-  declarations: []
+  declarations: [MainNavComponent],
+  exports: [MainNavComponent]
 })
 export class CoreModule { }

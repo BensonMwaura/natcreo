@@ -7,7 +7,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 // Application Modules
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
-import { LayoutsModule } from './layouts/layouts.module';
+// import { LayoutsModule } from './layouts/layouts.module';
 import { AppRoutingModule } from './app-routing.module';
 
 // Application Components
@@ -27,7 +27,7 @@ import { AppComponent } from './app.component';
     // Application Modules
     CoreModule,
     SharedModule,
-    LayoutsModule,
+    // LayoutsModule,
     AppRoutingModule
   ],
   bootstrap: [AppComponent]

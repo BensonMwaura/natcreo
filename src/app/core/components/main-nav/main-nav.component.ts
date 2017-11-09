@@ -1,14 +1,13 @@
-import { browser } from 'protractor';
 import { Component, OnInit } from '@angular/core';
 import { RouterLink, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-top-nav',
-  templateUrl: './top-nav.component.html',
-  styleUrls: ['./top-nav.component.scss']
+  selector: 'app-main-nav',
+  templateUrl: './main-nav.component.html',
+  styleUrls: ['./main-nav.component.scss']
 })
+export class MainNavComponent implements OnInit {
 
-export class TopNavComponent implements OnInit {
   navLinks: any[];
 
   constructor(router: Router) {
@@ -23,4 +22,5 @@ export class TopNavComponent implements OnInit {
 
   ngOnInit() {
   }
+
 }
