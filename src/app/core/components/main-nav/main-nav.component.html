@@ -1,5 +1,5 @@
 <!-- menubar -->
-<md-toolbar color="primary">
+<md-toolbar color="primary" role="header">
   <span class="company-name">Nature Creations</span>
   <span class="nav-spacer"></span>
   <button md-icon-button [mdMenuTriggerFor]="menu">
@@ -11,27 +11,27 @@
 <md-menu #menu="mdMenu" color="accent">
   <button md-menu-item>
     <md-icon>info</md-icon>
-    <span>About</span>
+    <span><a routerLink="/about">About</a></span>
   </button>
   <button md-menu-item>
     <md-icon>store</md-icon>
-    <span>Products</span>
+    <span><a routerLink="/products">Products</a></span>
   </button>
   <button md-menu-item>
     <md-icon>work</md-icon>
-    <span>Features</span>
+    <span><a routerLink="/features">Features</a></span>
   </button>
   <button md-menu-item disabled>
     <md-icon>dashboard</md-icon>
-    <span>Dashboard</span>
+    <span><a >Dashboard</a></span>
   </button>
   <button md-menu-item disabled>
     <md-icon>settings</md-icon>
-    <span>Settings</span>
+    <span><a >Settings</a></span>
   </button>
   <button md-menu-item>
     <md-icon>fingerprint</md-icon>
-    <span>Login</span>
+    <span><a >Login</a></span>
   </button>
 </md-menu>
 <!-- menutab -->

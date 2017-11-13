@@ -1,0 +1,8 @@
+@media (max-width: 48em) {
+  & > div {
+    padding: 0.57em;
+    & > h3 {
+      font-size: 14px;
+    }
+  }
+}

@@ -2,10 +2,38 @@
 
 @import './assets/artful-theme.scss';
 
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   max-width: 1440px;
+  h1 {
+    font-size: 34px;
+    @media (max-width: 48em) {
+      font-size: 22px;
+     }
+  }
+  h2 {
+    font-size: 30px;
+    @media (max-width: 48em) {
+      font-size: 17px;
+     }
+  }
+  h3 {
+    font-size: 22px;
+    @media (max-width: 48em) {
+     font-size: 14px;
+    }
+  }
+  p, li {
+    font-size: 16px;
+    @media (max-width: 48em) {
+     font-size: 11px;
+    }
+  }
 }
 
 mat-toolbar-row {
@@ -14,6 +42,18 @@ mat-toolbar-row {
 mat-card {
   font-family: 'Open Sans', sans-serif;
 }
+router-outlet {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+
+  & :after {
+    content: "";
+    display: block;
+    height: 142px;
+  }
+}
+
 .nav-spacer {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -46,7 +86,46 @@ mat-card {
     background-position: center 70%;
   }
 }
+.content-grid {
+  width: 85%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.7em;
+  grid-auto-rows: minmax(100px, auto);
+  & > div {
+    padding: 1em;
+    background: #eee;
+    &:nth-child(odd) {
+      background: #ddd;
+    }
+    &.view-card {
+      width: 100%;
+    }
 
+    &.view-header-image {
+      background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+      background-size: cover;
+    }
+  }
+  // @media-query
+  @media (min-width: 48em) {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+  @media (max-width: 26.625em) {
+    & > div {
+      grid-column: span 2;
+    }
+  }
+}
+.brand-desc {
+  grid-column: span 2;
+  @media (min-width: 64em) {
+    grid-column: auto;
+    grid-row: span 2;
+    align-self: center;
+  }
+}
 /**
 .main-grid {
   width: 85%;

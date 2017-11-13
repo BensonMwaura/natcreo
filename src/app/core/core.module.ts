@@ -13,7 +13,9 @@ import { Routes, Router, RouterModule } from '@angular/router';
 
 import { environment } from '../../environments/environment';
 import { MainNavComponent } from './components/main-nav/main-nav.component';
+import { FooterComponent } from './components/footer/footer.component';
 
+import { SeoService } from './services/seo.service';
 
 export const firebaseConfig = environment.firebaseConfig;
 @NgModule({
@@ -26,7 +28,8 @@ export const firebaseConfig = environment.firebaseConfig;
     FeaturesModule,
     NotFoundModule
   ],
-  declarations: [MainNavComponent],
-  exports: [MainNavComponent]
+  declarations: [MainNavComponent, FooterComponent],
+  exports: [MainNavComponent, FooterComponent],
+  providers: [SeoService]
 })
 export class CoreModule { }

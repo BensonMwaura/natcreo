@@ -8,17 +8,7 @@ import { RouterLink, Router } from '@angular/router';
 })
 export class MainNavComponent implements OnInit {
 
-  navLinks: any[];
-
-  constructor(router: Router) {
-    this.navLinks = [
-      { path: '/about', label: 'About' },
-      { path: '/products', label: 'Products' },
-      { path: '/features', label: 'Features' },
-      { path: '/dashboard', label: 'Dashboard' },
-      { path: '/settings', label: 'Settings' }
-    ];
-  }
+  constructor() { }
 
   ngOnInit() {
   }

@@ -4,7 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { FeaturesComponent } from './features.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/features', pathMatch: 'full' },
   { path: 'features', component: FeaturesComponent}
 ];
 
