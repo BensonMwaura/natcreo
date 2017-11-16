@@ -7,6 +7,8 @@ import { AboutComponent } from './about.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { TermsOfUseComponent } from './terms-of-use/terms-of-use.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { StockFeaturesComponent } from './stock-features/stock-features.component';
+import { StockProductsComponent } from './stock-products/stock-products.component';
 
 @NgModule({
   imports: [
@@ -14,6 +16,6 @@ import { PrivacyComponent } from './privacy/privacy.component';
     SharedModule,
     AboutRoutingModule
   ],
-  declarations: [AboutComponent, ShowcaseComponent, TermsOfUseComponent, PrivacyComponent]
+  declarations: [AboutComponent, ShowcaseComponent, TermsOfUseComponent, PrivacyComponent, StockFeaturesComponent, StockProductsComponent]
 })
 export class AboutModule { }
