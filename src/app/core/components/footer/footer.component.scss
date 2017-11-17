@@ -1,28 +1,26 @@
 .footer-grid {
   width: 100%;
-  height: 142px;
-  background: #f5f387;
+  height: 200px;
+  background: #c02727;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
+  -webkit-clip-path: polygon(0 34%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 34%, 100% 0, 100% 100%, 0% 100%);
 
   & > div {
-    background: #5383d3;
+    margin-top: 2.25em;
     padding: 15px;
-    // -webkit-clip-path: polygon(0 55%, 100% 24%, 100% 100%, 0% 100%);
-    // clip-path: polygon(0 55%, 100% 24%, 100% 100%, 0% 100%);
-    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 17% 75%);
-    // clip-path: polygon(0 0, 100% 0, 100% 100%, 17% 75%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 80%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 80%);
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 80%);
+    // clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 80%);
 
     &:nth-child(odd) {
-      background: #c02727;
+      // background: #c02727;
     }
     & > h3 {
       color:  #ffffff;
       font: normal 14px 'Aclonica', cursive;
-      margin: 0;
+      margin-top: 3em;
       & > span{
         color:  #5383d3;
       }

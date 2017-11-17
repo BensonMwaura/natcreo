@@ -50,7 +50,7 @@ router-outlet {
   & :after {
     content: "";
     display: block;
-    height: 142px;
+    height: 200px;
   }
 }
 
@@ -94,16 +94,16 @@ router-outlet {
   grid-gap: 0.6em;
   // grid-auto-rows: minmax(100px, auto);
   grid-template-columns:
-    [full-start] minmax(1em, 1fr)
+    [full-start] minmax(0.7em, 1fr)
     [main-start] minmax(0, 40em) [main-end]
-    minmax(1em, 1fr) [full-end];
+    minmax(0.7em, 1fr) [full-end];
   & > div {
     padding: 0.7em;
     text-align: left;
     background: #fff;
     &:first-child {
       min-height: 13em;
-      width: 90%;
+      // width: 100%;
       margin: 50px auto;
       background: #f5f387;
 
@@ -118,8 +118,10 @@ router-outlet {
   }
   & > .full {
     grid-column: full-start / full-end;
-    background: red;
+    background: #c02727;
     min-height:  15em;
+    -webkit-clip-path: polygon(0 34%, 100% 0, 100% 70%, 0% 100%);
+    clip-path: polygon(0 34%, 100% 0, 100% 70%, 0% 100%);
   }
   & > .brand-desc {
     // grid-column: span 2;
