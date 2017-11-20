@@ -1,7 +1,39 @@
-img[alt]{
+img[alt]::after{
+  content: attr('Nature Creations');
   padding-left: 1.3em;
+  @media (max-width: 26.625em){
+    padding: 0;
+  }
 }
-
+/*
+.nat-design {
+  & > header {
+    display: inline-block;
+    vertical-align: middle;
+    @media (max-width: 26.625em){
+      display: block;
+      text-align: center;
+    }
+  }
+  & > span.image {
+    font-size: 15em;
+    display: inline-block;
+    // height: 18em;
+    margin-left: 3em;
+    vertical-align: middle;
+    // width: 18em;
+    position: relative;
+    overflow: hidden;
+    border: 0;
+    @media (max-width: 26.625em) {
+      // height: 9em;
+      // width: 9em;
+      margin: 0;
+      font-size: 5em;
+    }
+  }
+}
+*/
 @media (max-width: 48em) {
   & > div {
     padding: 0.57em;
