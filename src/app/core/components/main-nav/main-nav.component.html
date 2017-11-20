@@ -1,37 +1,47 @@
+<!--
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span class="company-name">Nature Creations</span>
+    <span class="nav-space"></span>
+    <button mat-button>About</button>
+    <button mat-button>Products</button>
+    <button mat-button>Features</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+-->
 <!-- menubar -->
-<md-toolbar color="primary" role="header">
+<mat-toolbar color="primary" role="header">
   <span class="company-name">Nature Creations</span>
   <span class="nav-spacer"></span>
-  <button md-icon-button [mdMenuTriggerFor]="menu">
-    <md-icon>menu</md-icon>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
   </button>
-  <!-- <span class="menu-tag">Menu</span> -->
-</md-toolbar>
+  <span class="menu-tag">Menu</span>
+</mat-toolbar>
 <!-- menu -->
-<md-menu #menu="mdMenu" color="accent">
-  <button md-menu-item>
-    <md-icon>info</md-icon>
+<mat-menu #menu="matMenu" color="accent">
+  <button mat-menu-item>
+    <mat-icon>info</mat-icon>
     <span><a routerLink="/about">About</a></span>
   </button>
-  <button md-menu-item>
-    <md-icon>store</md-icon>
+  <button mat-menu-item>
+    <mat-icon>store</mat-icon>
     <span><a routerLink="/products">Products</a></span>
   </button>
-  <button md-menu-item>
-    <md-icon>work</md-icon>
+  <button mat-menu-item>
+    <mat-icon>work</mat-icon>
     <span><a routerLink="/features">Features</a></span>
   </button>
-  <button md-menu-item disabled>
-    <md-icon>dashboard</md-icon>
+  <button mat-menu-item disabled>
+    <mat-icon>dashboard</mat-icon>
     <span><a >Dashboard</a></span>
   </button>
-  <button md-menu-item disabled>
-    <md-icon>settings</md-icon>
+  <button mat-menu-item disabled>
+    <mat-icon>settings</mat-icon>
     <span><a >Settings</a></span>
   </button>
-  <button md-menu-item>
-    <md-icon>fingerprint</md-icon>
+  <button mat-menu-item>
+    <mat-icon>fingerprint</mat-icon>
     <span><a >Login</a></span>
   </button>
-</md-menu>
-<!-- menutab -->
+</mat-menu>
