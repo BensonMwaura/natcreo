@@ -6,6 +6,8 @@ const routes: Routes = [
   { path: 'about', loadChildren: './about/about.module#AboutModule' },
   { path: 'products', loadChildren: './products/products.module#ProductsModule' },
   { path: 'features', loadChildren: './features/features.module#FeaturesModule' },
+  { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
+  { path: 'preferences', loadChildren: './preferences/preferences.module#PreferencesModule' },
   { path: '**', loadChildren: './not-found/not-found.module#NotFoundModule'}
 ];
 
