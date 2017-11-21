@@ -16,6 +16,7 @@ import { MainNavComponent } from './components/main-nav/main-nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 import { SeoService } from './services/seo.service';
+import { AuthService } from './auth/auth.service';
 
 export const firebaseConfig = environment.firebaseConfig;
 @NgModule({
@@ -30,6 +31,6 @@ export const firebaseConfig = environment.firebaseConfig;
   ],
   declarations: [MainNavComponent, FooterComponent],
   exports: [MainNavComponent, FooterComponent],
-  providers: [SeoService]
+  providers: [SeoService, AuthService]
 })
 export class CoreModule { }
