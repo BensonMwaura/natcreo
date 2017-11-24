@@ -3,13 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AboutComponent } from './about.component';
 
-const aboutRoutes: Routes = [
+const ABOUTROUTES: Routes = [
   { path: '', redirectTo: '/about', pathMatch: 'full' },
   { path: 'about', component: AboutComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(aboutRoutes)],
+  imports: [RouterModule.forChild(ABOUTROUTES)],
   exports: [RouterModule]
 })
 export class AboutRoutingModule { }

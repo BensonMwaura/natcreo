@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from './../shared/shared.module';
-import { AboutRoutingModule } from './about-routing.module';
+// import { AboutRoutingModule } from './about-routing.module';
 
 import { AboutComponent } from './about.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
@@ -14,7 +14,7 @@ import { StockProductsComponent } from './stock-products/stock-products.componen
   imports: [
     CommonModule,
     SharedModule,
-    AboutRoutingModule
+    // AboutRoutingModule
   ],
   declarations: [AboutComponent, ShowcaseComponent, TermsOfUseComponent, PrivacyComponent, StockFeaturesComponent, StockProductsComponent]
 })

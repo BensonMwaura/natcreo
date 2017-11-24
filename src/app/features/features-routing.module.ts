@@ -3,12 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { FeaturesComponent } from './features.component';
 
-const routes: Routes = [
-  { path: 'features', component: FeaturesComponent}
+const FEATURESROUTES: Routes = [
+  { path: '', redirectTo: '/features', pathMatch: 'full' },
+  { path: 'features', component: FeaturesComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(FEATURESROUTES)],
   exports: [RouterModule]
 })
 export class FeaturesRoutingModule { }

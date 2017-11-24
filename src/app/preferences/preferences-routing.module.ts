@@ -3,12 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { PreferencesComponent } from './preferences.component';
 
-const routes: Routes = [
-  { path: 'preferences', component: PreferencesComponent}
+const PREFERENCESROUTES: Routes = [
+  { path: '', redirectTo: '/preferences', pathMatch: 'full' },
+  { path: 'preferences', component: PreferencesComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(PREFERENCESROUTES)],
   exports: [RouterModule]
 })
 export class PreferencesRoutingModule { }

@@ -1,5 +1,41 @@
 <header>
-    <app-main-nav></app-main-nav>
+  <nav>
+    <mat-toolbar color="primary" role="header">
+      <span class="company-name">Nature Creations</span>
+      <span class="nav-spacer"></span>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="menu-tag">Menu</span>
+    </mat-toolbar>
+    <!-- menu -->
+    <mat-menu #menu="matMenu" color="accent">
+      <button mat-menu-item routerLink="/about">
+        <mat-icon>info</mat-icon>
+        <span>About</span>
+      </button>
+      <button mat-menu-item routerLink="/products">
+        <mat-icon>store</mat-icon>
+        <span>Products</span>
+      </button>
+      <button mat-menu-item routerLink="/features">
+        <mat-icon>work</mat-icon>
+        <span>Features</span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>dashboard</mat-icon>
+        <span><a >Dashboard</a></span>
+      </button>
+      <button mat-menu-item disabled>
+        <mat-icon>settings</mat-icon>
+        <span><a >Settings</a></span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>fingerprint</mat-icon>
+        <span><a >Login</a></span>
+      </button>
+    </mat-menu>
+  </nav>
 </header>
 
 <router-outlet></router-outlet>
