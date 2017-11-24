@@ -13,7 +13,6 @@ import { NotFoundModule } from './../not-found/not-found.module';
 import { Routes, Router, RouterModule } from '@angular/router';
 
 import { environment } from '../../environments/environment';
-import { MainNavComponent } from './components/main-nav/main-nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 import { SeoService } from './services/seo.service';
@@ -32,8 +31,8 @@ export const firebaseConfig = environment.firebaseConfig;
     FeaturesModule,
     NotFoundModule
   ],
-  declarations: [MainNavComponent, FooterComponent, UserProfileComponent],
-  exports: [MainNavComponent, FooterComponent, UserProfileComponent],
+  declarations: [FooterComponent, UserProfileComponent],
+  exports: [FooterComponent, UserProfileComponent],
   providers: [SeoService, AuthService]
 })
 export class CoreModule { }
