@@ -1,5 +1,7 @@
 # Natcreo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/BensonMwaura/natcreo.svg)](https://greenkeeper.io/)
+
 Nature Creations is an artful, savvy, business design store.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
 
