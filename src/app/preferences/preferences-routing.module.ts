@@ -4,7 +4,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { PreferencesComponent } from './preferences.component';
 
 const PREFERENCESROUTES: Routes = [
-  { path: '', redirectTo: '/preferences', pathMatch: 'full' },
   { path: 'preferences', component: PreferencesComponent }
 ];
 
