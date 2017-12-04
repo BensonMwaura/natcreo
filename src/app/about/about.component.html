@@ -2,22 +2,22 @@
 <mat-tab-group color="accent" mat-stretch-tabs>
   <mat-tab label="Overview">
     <div class="content-grid">
-      <div class="brand-desc">
+      <div class="brand-desc" @brandTransition>
         <article class="nat-design">
           <div>
             <header>
-              <h2>Designing for the best brands</h2>
+              <h2>{{ brandHeaderDefault.heading }}</h2>
               <hr>
               <p>
-                Labore incididunt aliquip consectetur tempor reprehenderit laboris
-                consequat sit esse. In consequat sunt cupidatat officia.
+                {{ brandHeaderDefault.statement }} Our offer is guranteed to give you
+                good business returns.
               </p>
-              <button mat-raised-button color="accent">GET STARTED</button>
+              <button mat-raised-button color="accent"> {{ brandHeaderDefault.ctaButton | uppercase}} </button>
             </header>
           </div>
           <div>
             <span class="image">
-              <img src="../../assets/img/graphic-design-1.svg" alt="Nature Creations">
+              <img src="{{ brandHeaderDefault.splashImage }}" alt="Nature Creations">
             </span>
           </div>
         </article>

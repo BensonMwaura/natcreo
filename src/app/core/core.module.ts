@@ -18,6 +18,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SeoService } from './services/seo.service';
 import { AuthService } from './auth/auth.service';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { CompanyIconComponent } from './components/company-icon/company-icon.component';
 
 export const firebaseConfig = environment.firebaseConfig;
 @NgModule({
@@ -31,8 +32,8 @@ export const firebaseConfig = environment.firebaseConfig;
     FeaturesModule,
     NotFoundModule
   ],
-  declarations: [FooterComponent, UserProfileComponent],
-  exports: [FooterComponent, UserProfileComponent],
+  declarations: [FooterComponent, UserProfileComponent, CompanyIconComponent],
+  exports: [FooterComponent, UserProfileComponent, CompanyIconComponent],
   providers: [SeoService, AuthService]
 })
 export class CoreModule { }
