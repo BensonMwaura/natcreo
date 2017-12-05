@@ -7,7 +7,7 @@
 @include mat-core();
 
 
-$md-natcreoprimary: (
+$mat-natcreoprimary: (
   50 : #fefef6,
   100 : #fdfde7,
   200 : #fcfcd8,
@@ -40,7 +40,7 @@ $md-natcreoprimary: (
   )
 );
 
-$md-natcreoaccent: (
+$mat-natcreoaccent: (
   50 : #f7e5e5,
   100 : #ecbebe,
   200 : #e09393,
@@ -74,8 +74,8 @@ $md-natcreoaccent: (
 );
 
 // Artful Theme Material Color Pallete
-$artful-theme-primary: mat-palette($md-natcreoprimary, 600, 200, 900);
-$artful-theme-accent: mat-palette($md-natcreoaccent, 500, 200, 900);
+$artful-theme-primary: mat-palette($mat-natcreoprimary, 600, 200, 900);
+$artful-theme-accent: mat-palette($mat-natcreoaccent, 500, 200, 900);
 $artful-theme-warn: mat-palette($mat-deep-orange, 900);
 
 // Create Artful Theme
