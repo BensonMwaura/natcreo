@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   max-width: 1440px;
+  margin: 0 auto;
   h1 {
     font-size: 4em;
     @media (max-width: 48em) {
@@ -76,10 +77,6 @@ router-outlet {
   flex: 1 1 auto;
 }
 #large-screen-nav {
-  & > span {
-    font-size: 1.6em;
-    font-weight: 400;
-  }
   @media (max-width: 48em) {
     display: none;
   }
@@ -107,6 +104,10 @@ router-outlet {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+
+  @media (min-width: 91em) {
+    height: 40vh;
+  }
 
   @media (max-width: 48em) {
     height: 40vh;
