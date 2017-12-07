@@ -26,7 +26,7 @@ export class AboutComponent implements OnInit {
 
   brandHeaderDefault: BrandHeader = {
     heading: 'Designing for the best brands',
-    statement: 'Connecting people to your brand is at the heart of everything we plan and design.',
+    statement: 'Connecting people to your brand is at the heart of everything we design.',
     ctaButton: 'Get Started',
     splashImage: '../../assets/img/graphic-design-1.svg'
   }

@@ -12,32 +12,49 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   h1 {
-    font-size: 4em;
+    font-size: 3.4em;
     @media (max-width: 48em) {
       font-size: 2em;
      }
   }
   h2 {
-    font-size: 3.2em;
+    font-size: 3em;
     @media (max-width: 48em) {
-      font-size: 1.6em;
+      font-size: 1.56em;
      }
   }
   h3 {
-    font-size: 2em;
+    font-size: 2.4em;
     @media (max-width: 48em) {
-     font-size: 1.1em;
+     font-size: 1.32em;
     }
   }
-  p, li {
-    font-size: 1em;
+  p {
+    font-size: 1.25em;
     font-weight: 350;
     text-align: left;
     text-justify: auto;
-    line-height: 2.7em;
+    line-height: 2.1em;
     @media (max-width: 48em) {
-     font-size: 0.75em;
-     line-height: 2em;
+     font-size: 0.78em;
+     line-height: 1.75em;
+    }
+  }
+  ul > li, ol > li {
+    font-size: 1.17em;
+    font-weight: 300;
+    text-align: left;
+    text-justify: auto;
+    line-height: 2em;
+    & > ol > li {
+      font-size: 1em;
+    }
+    @media (max-width: 48em) {
+      font-size: 0.58em;
+      line-height: 1em;
+      & > ol > li {
+        font-size: 0.44em;
+      }
     }
   }
 }

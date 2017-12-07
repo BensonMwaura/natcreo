@@ -16,6 +16,17 @@ import { StockProductsComponent } from './stock-products/stock-products.componen
     SharedModule,
     // AboutRoutingModule
   ],
-  declarations: [AboutComponent, ShowcaseComponent, TermsOfUseComponent, PrivacyComponent, StockFeaturesComponent, StockProductsComponent]
+  declarations: [
+    AboutComponent,
+    ShowcaseComponent,
+    TermsOfUseComponent,
+    PrivacyComponent,
+    StockFeaturesComponent,
+    StockProductsComponent],
+  exports: [
+    ShowcaseComponent,
+    StockFeaturesComponent,
+    StockProductsComponent
+  ]
 })
 export class AboutModule { }
