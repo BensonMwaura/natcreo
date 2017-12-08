@@ -127,11 +127,11 @@ router-outlet {
   }
 
   @media (max-width: 48em) {
-    height: 40vh;
+    height: 45vh;
     background-position: center 70%;
   }
   @media (max-width: 23.4375em) {
-    height: 30vh;
+    height: 35vh;
     background-position: center 70%;
   }
 }
@@ -157,7 +157,7 @@ router-outlet {
       // background: #f5f387;
 
       @media (min-width: 64em) {
-        margin: 35px auto;
+        margin: 30px auto;
         align-self: center;
       }
     }
@@ -172,6 +172,51 @@ router-outlet {
     -webkit-clip-path: polygon(0 34%, 100% 0, 100% 70%, 0% 100%);
     clip-path: polygon(0 34%, 100% 0, 100% 70%, 0% 100%);
   }
+  & > .banner {
+    width: 100%;
+    grid-column: full-start / full-end;
+    min-height: 20em;
+    // background-image: url('./assets/img/branding.png');
+    // background-size: cover 100%;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // -webkit-clip-path: polygon(0 34%, 100% 0, 100% 70%, 0% 100%); #1
+    // clip-path: polygon(0 34%, 100% 0, 100% 70%, 0% 100%); #1
+    & > img {
+      width: 100%;
+      height: 100%;
+      background-image: url('./assets/img/branding.png');
+      background-size: cover 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+    }
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    // -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%); #4
+    // clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%); #4
+    // -webkit-clip-path: polygon(0 34%, 100% 0, 100% 100%, 0% 70%); #2
+    // clip-path: polygon(0 34%, 100% 0, 100% 100%, 0% 70%); #2
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 34%, 0 70%); #3
+    // clip-path: polygon(0 0, 100% 0, 100% 34%, 0 70%); #3
+    // -webkit-flex-shrink: 0;
+    // -ms-flex-negative: 0;
+    // flex-shrink: 0;
+    @media (min-width: 91em) {
+      height: 100%
+    }
+
+    @media (max-width: 48em) {
+      height: 85%;
+      background-position: center 70%;
+    }
+    @media (max-width: 23.4375em) {
+      height: 70%;
+      background-position: center 70%;
+    }
+  }
   & > .brand-desc {
     // grid-column: span 2;
     // -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 82%, 71% 87%, 63% 100%, 47% 87%, 0 85%);
@@ -182,8 +227,9 @@ router-outlet {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 2em;
-      padding: 15px;
-      margin-bottom: 10px;
+      min-height: 35vh;
+      padding: 10px;
+      // margin-bottom: 10px;
       & > div {
         width: 100%;
         align-self: center;
@@ -197,8 +243,8 @@ router-outlet {
         }
         & > .image img {
           // vertical-align: center;
-          width: 65%;
-          margin: auto 17%;
+          width: 60%;
+          margin: auto 20%;
           // width: 92%;
           // margin: auto 25%;
           @media (max-width: 26.625em){
