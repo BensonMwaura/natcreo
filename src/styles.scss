@@ -167,9 +167,16 @@ router-outlet {
   }
   & > .full {
     grid-column: full-start / full-end;
-    background: #c02727;
-    min-height:  15em;
+    background: #f8f58c;
+    min-height:  30em;
     margin-top: 15px;
+    background-image: url("./assets/img/Nature_Creations-CustomerCare.png");
+    background-position: center 100%;
+    background-repeat: no-repeat;
+    background-size: cover cover;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
     -webkit-clip-path: polygon(0 34%, 100% 0, 100% 70%, 0% 100%);
     clip-path: polygon(0 34%, 100% 0, 100% 70%, 0% 100%);
   }
