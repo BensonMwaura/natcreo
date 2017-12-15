@@ -62,9 +62,10 @@ body {
 mat-toolbar-row {
   justify-content: space-between;
 }
+/*
 mat-card {
   font-family: 'Open Sans', sans-serif;
-}
+} */
 router-outlet {
   min-height: 100%;
   /* equal to footer height */
@@ -170,18 +171,32 @@ router-outlet {
     background: #f8f58c;
     min-height:  30em;
     margin-top: 15px;
-    background-image: url("./assets/img/Nature_Creations-CustomerCare.png");
+    background-image: url("./assets/img/Nature_Creations-CustomerCare-Left.png");
     background-position: center 100%;
     background-repeat: no-repeat;
     background-size: cover cover;
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    -webkit-clip-path: polygon(0 34%, 100% 0, 100% 70%, 0% 100%);
-    clip-path: polygon(0 34%, 100% 0, 100% 70%, 0% 100%);
+    // -webkit-clip-path: polygon(0 34%, 100% 0, 100% 70%, 0% 100%); #1
+    // clip-path: polygon(0 34%, 100% 0, 100% 70%, 0% 100%); #1
+    // -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%); #2
+    // clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%); #2
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  }
+  & > .pitch {
+    width: 100%;
+    min-height: 20em;
+    & > div {
+      margin: 50px auto;
+
+      @media (max-width: 23.4375em) {
+        margin: 30px auto;
+      }
+    }
   }
   & > .banner {
-    width: 100%;
     grid-column: full-start / full-end;
     min-height: 20em;
     // background-image: url('./assets/img/branding.png');
@@ -193,7 +208,7 @@ router-outlet {
     & > img {
       width: 100%;
       height: 100%;
-      background-image: url('./assets/img/branding.png');
+      background-image: url('./assets/img/NatCreo-Branding.png');
       background-size: cover 100%;
       background-position: center;
       background-repeat: no-repeat;
@@ -320,7 +335,7 @@ router-outlet {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
-  grid-gap: 0.7em;
+  grid-gap: 1.2em;
   margin-top: 30px;
   // background: #eeeeee;
   // -webkit-clip-path: polygon(0 34%, 100% 0, 100% 70%, 0% 100%);
