@@ -4,17 +4,23 @@
 
 html, body {
   height: 100%;
+  font-size: 100%;
 }
 
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   max-width: 1440px;
   margin: 0 auto;
   h1 {
-    font-size: 3.4em;
+    font-size: 3em;
+    line-height: 1.05;
     @media (max-width: 48em) {
       font-size: 2em;
+      line-height: 1.25;
      }
   }
   h2 {
@@ -152,7 +158,7 @@ router-outlet {
     text-align: left;
     background: #fff;
     &:first-child {
-      min-height: 13em;
+      min-height: 15em;
       // width: 100%;
       margin: 25px auto;
       // background: #f5f387;
@@ -168,9 +174,10 @@ router-outlet {
   }
   & > .full {
     grid-column: full-start / full-end;
-    background: #f8f58c;
+    // background: #f8f58c;
     min-height:  30em;
     margin-top: 15px;
+    width: 100%;
     background-image: url("./assets/img/Nature_Creations-CustomerCare-Left.png");
     background-position: center 100%;
     background-repeat: no-repeat;
@@ -186,12 +193,12 @@ router-outlet {
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
   }
   & > .pitch {
-    width: 100%;
-    min-height: 20em;
-    & > div {
-      margin: 50px auto;
-
-      @media (max-width: 23.4375em) {
+    // width: 100%;
+    min-height: 25em;
+    & > div.middle {
+      // align-self: stretch;
+      margin: 65px auto;
+      @media (max-width: 26.625em) {
         margin: 30px auto;
       }
     }
@@ -305,11 +312,14 @@ router-outlet {
     }
   } */
 }
+.snippets {
+  min-height: 25em;
+}
 .view-cards {
   width: 90%;
   margin: 15px auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 1em;
 
@@ -317,10 +327,10 @@ router-outlet {
     width: 100%;
   }
 
-  & .view-header-image {
+  /* & .view-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
-  }
+  } */
   // @media query
   @media (min-width: 48em) {
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
@@ -336,7 +346,7 @@ router-outlet {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 1.2em;
-  margin-top: 30px;
+  // margin-top: 30px;
   // background: #eeeeee;
   // -webkit-clip-path: polygon(0 34%, 100% 0, 100% 70%, 0% 100%);
   // clip-path: polygon(0 34%, 100% 0, 100% 70%, 0% 100%);
@@ -346,7 +356,7 @@ router-outlet {
       & > img {
         width: 35%;
         margin: auto 32%;
-        @media (max-width: 20em) {
+        @media (max-width: 26.875em) {
           width: 15%;
           margin: auto 42%;
         }
@@ -358,6 +368,7 @@ router-outlet {
       & > mat-card-title {
         font-size: 1.3em;
         text-align: center;
+        background: #f8f58c;
         // border-bottom: 1px dotted rgb(173, 172, 172);
       }
    }
@@ -367,7 +378,7 @@ router-outlet {
   @media (min-width: 48em) {
     grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
   }
-  @media (max-width: 20em) {
+  @media (max-width: 26.875em) {
     & > div {
       grid-column: span 3;
     }
