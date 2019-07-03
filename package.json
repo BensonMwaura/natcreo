@@ -8,7 +8,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "private": true,
   "dependencies": {
@@ -35,7 +37,8 @@
     "ng-pwa-tools": "0.0.15",
     "ngx-swiper-wrapper": "^4.6.6",
     "rxjs": "^5.1.0",
-    "zone.js": "^0.8.4"
+    "zone.js": "^0.8.4",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@angular/cli": "^1.4.4",
@@ -56,5 +59,6 @@
     "ts-node": "~3.0.4",
     "tslint": "~5.3.2",
     "typescript": "~2.3.3"
-  }
+  },
+  "snyk": true
 }
